@@ -1,0 +1,16 @@
+title: Az104
+description: I want to learn az104 course.
+template:
+  repo: az104-template
+  name: az104
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
